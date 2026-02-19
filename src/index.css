@@ -1,0 +1,145 @@
+/* ── Reset & base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #e5e7eb;
+  color: #111827;
+  min-height: 100vh;
+}
+
+/* ── Hlavní rozložení: 2 sloupce ── */
+.app-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.panel {
+  padding: 2rem;
+}
+
+.panel--form {
+  background-color: #f9fafb;
+  border-right: 1px solid #d1d5db;
+}
+
+.panel--preview {
+  background-color: #ffffff;
+}
+
+/* ── Formulář ── */
+.form-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.form-field input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-field input:focus {
+  border-color: #6366f1;
+}
+
+/* Mezera mezi sekcemi formuláře */
+.form-section + .form-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* textarea stejný styl jako input */
+.form-field textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.form-field textarea:focus {
+  border-color: #6366f1;
+}
+
+/* ── CV Náhled ── */
+.cv-preview {
+  max-width: 600px;
+}
+
+.cv-header {
+  border-bottom: 2px solid #111827;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cv-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cv-header p {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Sekce v náhledu (Vzdělání, Zkušenosti) */
+.cv-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cv-section h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.cv-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.cv-date {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}

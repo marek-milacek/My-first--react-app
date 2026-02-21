@@ -1,4 +1,3 @@
-// Tato komponenta dostane od App:
 function GeneralInfoForm({
   name,
   email,

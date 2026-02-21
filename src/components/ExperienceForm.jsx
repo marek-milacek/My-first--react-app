@@ -1,4 +1,3 @@
-// Formulář pro pracovní zkušenosti.
 function ExperienceForm({
   company,
   position,

@@ -1,4 +1,3 @@
-// Formulář pro studijní zkušenosti.
 function EducationForm({
   school,
   fieldOfStudy,

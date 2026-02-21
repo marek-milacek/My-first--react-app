@@ -6,6 +6,10 @@ import CVPreview from "./components/CVPreview";
 
 export default function App() {
   // --- Základní informace ---
+  // React HOOKS - useState
+  // useState je funkce, která vrací pole se dvěma hodnotami:
+  // 1. aktuální hodnota stavu
+  // 2. funkce pro aktualizaci stavu
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
